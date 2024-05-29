@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0a0a0a, #534553);
+}
+
+.Calculator-container {
+    height: 100vmin;
+    width: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.input-box {
+    height: 12vmin;
+    width: 53vmin;
+    column-gap: 1vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input {
+    border: none;
+    height: 10vmin;
+    width: 50vmin;
+    background: transparent;
+    font-size: 5vmin;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: #788f9eec;
+    text-align: right;
+
+}
+
+input::placeholder {
+    color: #788f9eec;
+}
+
+.button-box {
+    height: 80vmin;
+    width: 55vmin;
+    row-gap: 1vmin;
+    column-gap: 1vmin;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border: 0.5vmin solid rgb(58, 52, 52);
+    border-radius: 10%;
+    padding: 2vmin;
+    background: linear-gradient(45deg, #0a0a0a, #534553);
+    box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.9);
+
+}
+
+.button:hover {
+    cursor: pointer;
+
+}
+
+.button {
+    height: 12vmin;
+    width: 12vmin;
+    border-radius: 50%;
+    font-size: 5vmin;
+    font-weight: 900;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.2);
+    border: none;
+    flex-wrap: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #5d70a1;
+    color: #3c2eb6;
+
+}
+
+.operator {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #50a6ac;
+    color: #cad0d4;
+}
+
+.result {
+    background-color: #18ca53da;
+    color: #f7f7f7;
+    font-size: 7vmin;
+}
+
+.clear {
+    background-color: #e0130cc4;
+    color: #09d9f5;
+    font-size: 6vmin;
+}
+
+.back {
+    background-color: #a3a511d7;
+    color: #f7f7f7;
+    font-size: 7vmin;
+}
